@@ -19,7 +19,7 @@ function calcExpendature() {
 }
 
 function onSubmit(e) {
-    if (expenseName.value === '' || expenseCost === '' || expenseDate === '') {
+    if (expenseName.value === '' || expenseCost.value === '' || isNaN(+expenseCost.value) || expenseDate.value === '') {
         errorArea.innerText = 'Please fill out field ^'
         errorArea.className = 'error-on';
         setTimeout(function() {

@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    margin: 2rem auto;
+    margin: 2rem;
 }
 
 .title-area {
@@ -32,18 +32,37 @@ body {
     margin-bottom: 1rem;
 }
 
+.input-area div {
+    display: flex;
+}
+
 .input-form {
     border-radius: 0.2rem;
     border: none;
     height: 2em;
     padding: 0 1rem;
     margin-right: 0;
+    width: 100%;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-area div h2:not(:first-child) {
+    margin-left: 1em;
+}
+
+.input-area div h2 {
+    margin-right: 0.5em;
 }
 
 .submit-button {
     height: 2em;
     padding: 0 1em;
-    margin-left: 0;
+    margin: 1em auto;
     border-radius: 0.2rem;
     border: none;
     background-color: var(--submit-button-color);
